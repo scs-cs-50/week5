@@ -4,7 +4,7 @@ var bcount =0;
 $('#bigbutton').on('click', function() {
 	bcount++;
 	console.log('main code - button click!');
-	console.log('bcount is: " + bcount);
+	console.log('bcount is: ' + bcount);
 	   });
 
 
@@ -17,7 +17,7 @@ $(document).on('pageinit','#first_page',function() {
 	$('#bigbutton').on('click', function() {
 		bcount++;
 		console.log('pageinit - button click!');
-		console.log('bcount is: " + bcount);
+		console.log('bcount is: ' + bcount);
 	    });
 
      counter = 1;
@@ -38,7 +38,7 @@ $(document).on('pagebeforeshow','#first_page',function(event, ui)
 });
 $(document).on('pageshow','#first_page',function(event, ui)
 {
-	alert('Pageshow fired and counter is ' + counter);
+    //	alert('Pageshow fired and counter is ' + counter);
 	counter = counter + 1;
 });
 $(document).on('pagebeforehide','#first_page',function(event, ui)
