@@ -22,7 +22,7 @@ $(document).on('pageinit','#first_page',function() {
 	   });
 	$('#first_page').on('click', function() {
 		bcount++;
-		console.log('page code - button click!');
+		console.log('page code - a click!');
 		console.log('bcount is: ' + bcount);
 	   });
 
