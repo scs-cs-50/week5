@@ -1,13 +1,6 @@
 var counter;
 var bcount =0;
 
-$('#bigbutton').on('click', function() {
-	bcount++;
-	console.log('main code - button click!');
-	console.log('bcount is: ' + bcount);
-	   });
-
-
 
 $(document).on('pagecreate','#first_page', function() {
 //     alert('Pagecreate fired');
@@ -19,6 +12,19 @@ $(document).on('pageinit','#first_page',function() {
 		console.log('pageinit - button click!');
 		console.log('bcount is: ' + bcount);
 	    });
+
+	$('#main-content').on('click', function() {
+		bcount++;
+		console.log('div code - button click!');
+		console.log('bcount is: ' + bcount);
+	   });
+	$('#first_page').on('click', function() {
+		bcount++;
+		console.log('page code - button click!');
+		console.log('bcount is: ' + bcount);
+	   });
+
+
 
      counter = 1;
 	$('#pageoneanchor').on('click',function(e)
