@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport"
+      content="initial-scale=1.0,width=device-width,user-scalable=yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <title></title>
+    <link rel="stylesheet" href="//code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css">
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+      <script src="//code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+     <script src="pagebypageclick.js"></script>
+  </head>
+
+  <body>
+
+    <div id="first_page" data-role="page">
+      <div data-role='header' data-nobackbtn='true'>
+        <h1>Page One!</h1>
+      </div>
+
+      <div role="main" class="ui-content">
+   
+        <ul>
+          <li id="pageonetextline">This is the first page being visited</li>
+        </ul>
+
+      </div>
+
+      <div data-role='footer'>
+        <p>The Bottom of Page One</p>
+        <p><a href="#second_page">Go to Page Two</a></p>
+      </div>
+
+    </div>
+
+    <div id="second_page" data-role="page">
+      <div data-role='header' data-nobackbtn='true'>
+        <h1>Page Two!</h1>
+      </div>
+
+      <div data-role="content">
+        <ul>
+          <li>This is the second page being visited.</li>
+        </ul>
+     </div>
+      
+      <div data-role='footer'>
+        <p>The Bottom of Page Two</p>
+        <p><a id="pageoneanchor" href="#first_page">Go to Page One</a></p>
+      </div>
+
+    </div>
+
+  </body>
+</html>
