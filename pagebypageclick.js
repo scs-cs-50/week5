@@ -7,10 +7,12 @@ $(document).on('pagecreate','#first_page', function() {
 });
 
 $(document).on('pageinit','#first_page',function() {
-	$('#bigbutton').on('click', function() {
+	$('#bigbutton').on('click', function(e) {
 		bcount++;
 		console.log('pageinit - button click!');
 		console.log('bcount is: ' + bcount);
+
+		//e.stopPropagation();
 	    });
 
 	$('#main-content').on('click', function() {
